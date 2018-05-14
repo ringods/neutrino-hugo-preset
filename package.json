@@ -1,0 +1,29 @@
+{
+  "name": "neutrino-hugo-preset",
+  "version": "0.0.1",
+  "description": "Neutrino.JS preset to build Hugo website & themes",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build",
+    "test": "neutrino test"
+  },
+  "keywords": [
+    "hugo",
+    "webpack"
+  ],
+  "author": "Ringo De Smet",
+  "license": "MIT",
+  "dependencies": {
+    "toml": "^2.3.3"
+  },
+  "devDependencies": {
+    "@neutrinojs/jest": "^8.2.3",
+    "@neutrinojs/library": "^8.2.3",
+    "mock-fs": "^4.5.0",
+    "neutrino": "^8.2.3"
+  }
+}
