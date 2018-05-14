@@ -19,6 +19,5 @@ test('uses preset', () => {
 test('throws when no config.toml', () => {
   const api = Neutrino();
 
-  expect(() => api.use(require('../src'))).toThrow('You must specify a library name');
+  expect(() => api.use(require('../src'))).toThrow('No config.toml file found.');
 });
-

@@ -18,7 +18,7 @@
   "author": "Ringo De Smet",
   "license": "MIT",
   "dependencies": {
-    "toml": "^2.3.3"
+    "toml-require": "^1.1.0"
   },
   "devDependencies": {
     "@neutrinojs/jest": "^8.2.3",

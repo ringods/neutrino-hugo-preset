@@ -1,5 +1,7 @@
 # Neutrino preset for Hugo site and theme.
 
+[![wercker status](https://app.wercker.com/status/50420d7350afaee4471badb52a02f017/s/master "wercker status")](https://app.wercker.com/project/byKey/50420d7350afaee4471badb52a02f017)
+
 [Hugo](https://gohugo.io) is a powerful static website generator. It offers a clean separation
 between content and styling. This styling is comprised of layouts, CSS style sheets and imagery.
 Hugo clearly states that [it does not support asset processing](https://gohugo.io/getting-started/directory-structure/)
