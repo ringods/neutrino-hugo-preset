@@ -2,6 +2,10 @@
 module.exports = {
   use: [
     ['@neutrinojs/library', { name: 'neutrino-hugo-preset' }],
-    '@neutrinojs/jest'
+    ['@neutrinojs/jest', {
+      "moduleDirectories": [
+        "src"
+      ]
+    }]
   ]
 }

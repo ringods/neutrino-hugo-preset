@@ -23,7 +23,6 @@
   "devDependencies": {
     "@neutrinojs/jest": "^8.2.3",
     "@neutrinojs/library": "^8.2.3",
-    "mock-fs": "^4.5.0",
     "neutrino": "^8.2.3"
   }
 }

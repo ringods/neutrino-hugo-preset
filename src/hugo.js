@@ -14,7 +14,7 @@ export function loadHugoConfig () {
     localConfig = require('./config.toml')
   } catch (e) {
     if (e.code === 'MODULE_NOT_FOUND') {
-      // Re-throw not "Module not found" errors 
+      // Re-throw as "No config.toml file found." error
       throw new Error("No config.toml file found.");
     }
 
