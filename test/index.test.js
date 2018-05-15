@@ -1,14 +1,9 @@
 import { Neutrino } from 'neutrino';
 
+jest.unmock('hugo')
+
 test('loads preset', () => {
   expect(() => require('index')).not.toThrow();
-});
-
-test('uses preset', () => {
-  jest.mock('hugo')
-  const api = Neutrino();
-
-  expect(() => api.use(require('index'))).not.toThrow()
 });
 
 test('throws when no config.toml', () => {
