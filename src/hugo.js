@@ -1,14 +1,15 @@
-export function loadHugoConfig () {
+const DEFAULT_HUGO_SITE_CONFIG = {
+  contentDir: "content",
+  dataDir: "data",
+  layoutDir: "layouts",
+  publishDir: "public",
+  staticDir: "static",
+  themesDir: "themes"
+}
+
+function loadHugoConfig () {
   require('toml-require').install({})
 
-  var defaultConfig = {
-    contentDir: "content",
-    dataDir: "data",
-    layoutDir: "layouts",
-    publishDir: "public",
-    staticDir: "static",
-    themesDir: "themes"
-  }
   var localConfig;
   try {
     localConfig = require('./config.toml')
@@ -20,5 +21,7 @@ export function loadHugoConfig () {
 
   }
   // Merge defaults with local config
-  return { ...defaultConfig, ...localConfig }
+  return { ...DEFAULT_HUGO_SITE_CONFIG, ...localConfig }
 }
+
+module.exports = { DEFAULT_HUGO_SITE_CONFIG, loadHugoConfig }
